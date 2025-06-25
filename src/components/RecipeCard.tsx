@@ -1,8 +1,8 @@
-
 import { Star, Clock, Users, Heart } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Recipe } from '@/types/recipe';
+import { cn } from '@/lib/utils';
 
 interface RecipeCardProps {
   recipe: Recipe;

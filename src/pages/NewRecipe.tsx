@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Plus, Minus, Camera, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -9,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { useRecipes } from '@/hooks/useRecipes';
 import { Ingredient } from '@/types/recipe';
 import { useToast } from '@/hooks/use-toast';
+import { cn } from '@/lib/utils';
 
 interface NewRecipeProps {
   onRecipeAdded: () => void;
@@ -44,7 +44,7 @@ export const NewRecipe = ({ onRecipeAdded }: NewRecipeProps) => {
     { value: 'sobremesa', label: 'Sobremesa' },
     { value: 'bebida', label: 'Bebida' },
     { value: 'lanche', label: 'Lanche' },
-    { value: 'aperitivo', label: 'Aperitivo' },
+  { value: 'aperitivo', label: 'Aperitivo' },
   ];
 
   const unitOptions = ['g', 'kg', 'ml', 'l', 'xícara', 'colher (sopa)', 'colher (chá)', 'unidade', 'dente', 'pitada'];
